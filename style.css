@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
+:root{
+    --color-1: #0D0921;
+    --color-2:  rgb(124, 126, 130);
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+.bg-1{
+    background-color: var(--color-1);
+}
+
+
+/* Main styles */
+
+main{
+    padding: 100px 0;
+}
+
+main .text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main-badge{
+    align-self: start;
+    box-shadow: 0px 0px 20px 0px rgba(5, 157, 255, 0.2);
+    text-transform: uppercase;
+    padding: 7px 12px;
+    color: #e0e0e0;
+    font-size: 15px;
+    letter-spacing: .2rem;
+}
+
+#main-title{
+    font-weight: bolder;
+    font-size: 75px;
+    margin-bottom: 0;
+}
+
+#main-title b{
+    background-image: linear-gradient(90deg, rgb(251, 83, 67) 0%, rgb(5, 157, 255) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 75px;
+}
+
+.attribute-container{ /* This code will be reused */
+    margin: 30px 0;
+    color: #7e7e7e !important;
+}
+
+.attribute-container p{
+    color: #7e7e7e !important;
+}
+
+.attribute{
+    display: flex;
+}
+
+.attribute p{
+    margin-bottom: 8px;
+}
+
+.attribute img {
+    height: 15px;
+    width: 15px;
+
+    margin: 5px;
+    margin-right: 20px;
+}
+
+.gradient-button{ /* This code will be reused */
+    font-size: 14px;
+    font-weight: 600;
+    padding: 17px 42px;
+    align-self: start;
+    border-radius: 30px;
+    border: none;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, rgb(251, 81, 65), rgb(103, 74, 217), rgb(103, 74, 217), rgb(251, 81, 65));
+
+    background-origin: padding-box;
+    background-position-x: 100%;
+    background-size: 300% 100%;
+
+    transition-duration: .3s;
+}
+
+.gradient-button:hover{
+    background-position-x: 0;
+}
+
+
+main .img-container{
+    display: flex;
+
+    justify-content: end;
+    align-items: center;
+}
+
+
+/* End Main Styles */
+
+/* Benefits Styles */
+
+#benefits{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits-container{
+    display: flex;
+    max-width: 1200px;
+    border-radius: 10px;
+    background-color: black;
+
+    margin-bottom: 100px;
+    z-index: 1;
+}
+
+.benefit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 45px;
+    text-align: center;
+}
+
+.benefit span{
+    color: rgb(103, 74, 217);
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.benefit h3{
+    margin-bottom: 25px;
+}
+
+.benefit p{
+    color: var(--color-2);
+    margin-bottom: 0;
+}
+
+.benefit:nth-child(2){
+    border-left: 2px dashed rgb(59, 59, 59);
+    border-right: 2px dashed rgb(59, 59, 59);
+}
+
+
+#benefits .shadow{
+    background-color: #18142C;
+    width: 100%;
+    height: 50%;
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+/* End Benefits Styles */
+
+/* About Styles */
+
+#about{
+    padding: 100px 0;
+}
+
+.gradient-badge{
+    font-size: 15px !important;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background-clip: text;
+    -webkit-background-clip: text !important;
+    color: transparent;
+    background: linear-gradient(90deg, #FB5141 0%, #089EFF 100%);
+    border-radius: 4px;
+    border: 1px solid #322F45;
+    padding: 8px 12px 8px;
+}
+
+
+.white-header{ /* This code will be reused too */
+    font-size: 44px;
+    font-weight: 700;
+}
+
+
+#about .text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+
+.big-container{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.big-item{
+    display: flex;
+}
+
+.big-item p{
+    color: var(--color-2);
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    margin-right: 50px;
+    max-width: 72px;
+}
+
+.big-red{
+    color: rgb(251, 81, 65);
+}
+
+.big-blue{
+    color: rgb(8, 158, 255);
+}
+
+.big-text{
+    font-size: 54px;
+    font-style: normal;
+    font-size: 700;
+}
+
+/* End About Styles */
+
+/* Service Styles */
+
+#services{
+    padding: 100px 0;
+}
+
+
+#services .white-header{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+.services-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    max-width: 396px;
+    padding: 15px;
+    margin: 30px;
+}
+
+.service h3{
+    font-size: 24px;
+}
+
+.service p{
+    color: var(--color-2);
+}
+
+.service span{
+    background-color: rgba(5, 157, 255, 0.1);
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 45px;
+    margin: 25px;
+}
+
+/* End Services Styles */
+
+/* Calculator Styles */
+
+#calculator{
+    background-image: linear-gradient(90deg, rgb(103, 74, 217) 0%, rgb(251, 81, 65) 100%);
+    border-radius: 6px;
+    padding: 50px;
+}
+
+#calculator .text-container{
+    width: 100%;
+}
+
+#calculator input{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.192);
+    outline: none;
+    padding: 15px;
+    border-radius: 6px;
+    width: 100%;
+
+    margin-bottom: 25px;
+}
+
+#calculator input::placeholder{
+    color: white !important;
+}
+
+
+#calculator .result{
+    background-color: rgba(217, 217, 217, 0.15);
+    width: 100%;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+
+/* End calculator styles */
+
+/* Help styles */
+
+#help{
+    padding: 100px 0;
+}
+
+
+#help p{
+    color: var(--color-2);
+}
+
+#help h3{
+    margin: 20px 0;
+}
+
+/* End Help Styles*/ 
+
+/* Steps Styles */
+
+#steps{
+    padding: 0 0 100px 0;
+}
+
+#steps .white-header{
+    margin: 25px;
+}
+
+.num-containers{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0 25px 0;
+}
+
+.num{
+    padding: 15px 16px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.num-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.num-text{
+    text-align: center;
+    color: var(--color-2);
+} 
+
+/* End steps styles */ 
+
+/* Feedback Styles */
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgb(37, 37, 37);
+    padding: 50px;
+}
+
+.testimonial img{
+    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+
+.testimonial p{
+    color: var(--color-2);
+}
+
+
+/* End Feedback Styles */
+
+/* Contact Styles */
+
+
+#contact img{
+    width: 99%;
+    margin-left: 4px; 
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+#contact{
+    padding: 0 !important;
+}
+
+#contact p{
+    color: var(--color-2);
+    margin: 0;
+}
+
+
+#contact .description{
+    margin-bottom: 15px;
+}
+
+
+.form-container{
+    padding: 80px;
+
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#contact .material-symbols-outlined{
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#contact .item-container{
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+
+#contact .item-container p{
+    margin-left: 15px;
+}
+
+
+.inputs-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputs-container input, textarea{
+    max-width: 48%;
+
+    background-color: #e5e5e9;
+
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #000;
+    font-size: 14px;
+}
+
+.inputs-container input::placeholder, textarea::placeholder{
+    color: #959698;
+    font-size: 14px;
+}
+
+#contact textarea{
+    max-width: 100%;
+    min-height: 250px;
+}
+
+/* End Contact Styles */
+/* Footer Styles*/
+
+#footer p{
+    color: var(--color-2);
+    font-size: 16px;
+}
